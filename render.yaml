@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: quantumfire-peru
+    runtime: python
+    plan: starter            # qiskit + simulación necesitan más de los 512 MB del plan free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run src/quantumfire_app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3

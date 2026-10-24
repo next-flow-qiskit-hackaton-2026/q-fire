@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "migrate-qiskit-ibm-runtime": {
+      "source": "Qiskit/skills",
+      "sourceType": "github",
+      "skillPath": "skills/migrate-qiskit-ibm-runtime/SKILL.md",
+      "computedHash": "39ae35f111b261b44255720aab9a0aec19a85367dfe6a925f45d7e12fa9af6a8"
+    }
+  }
+}
